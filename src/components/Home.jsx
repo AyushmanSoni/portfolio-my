@@ -1,20 +1,24 @@
 import React from 'react'
-import  HeroImage from '../assests/myphoto.jpeg'
+import  HeroImage from '../assests/hero.jpg'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import {Link} from 'react-scroll'
+
 
 const Home = () => {
   return (
     <div name="home" className ="h-screen w-full bg-gradient-to-b
                                  from-black to-gray-800 via-black">
         <div className ="max-w-screen-lg mx-auto flex-col items-center
-                            justify-center h-full px-4 md:flex-row">
+                             h-auto md:flex-row">
             <div className ="flex flex-col md:flex-row justify-center pt-36 h-full ">
                 <div className=''>
-                <h2 className="text-4xl sm:text-7xl font-bold text-white">
-                    I,m a Graphics and UI/UX Designer
+                <h2 className="text-xl sm:text-6xl font-bold text-white">
+                    Hi, I'm 
+                    <br/>
+                    Ayushman Soni
                 </h2>
-                <p className="text-gray-500 py-4 max-w-md">
+                <h3 className='font-medium text-2xl mt-3 text-blue-300 '>MERN Developer and UI/UX Designer</h3>
+                <p className="text-gray-300 py-4 max-w-md">
                 Passionate graphics designer transitioning
                  to the world of JS and React, 
                  blending creativity with technology 
@@ -31,7 +35,7 @@ const Home = () => {
                     </Link>
                 </div>
                 </div>
-                <div className=''>
+                <div className='w-1/2'>
                 <img src={HeroImage} alt="my profile" className="rounded-2xl mx-auto w-3/4"/>
   
                 </div>
